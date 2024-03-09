@@ -10,7 +10,7 @@
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -30,6 +30,7 @@ nav {
     height: 100px;
 
 }
+
 nav .btns {
     display: flex;
     align-items: center;
@@ -44,17 +45,19 @@ nav .btns button {
     border: 2px;
     transition: 0.2s ease-in-out;
 }
+
 .navBtn {
     background-color: #6F9CEB;
     color: #EDF7B5;
 }
 
-nav .btns .navBtn:hover{
+nav .btns .navBtn:hover {
     cursor: pointer;
-    background-color: #36413e; 
+    background-color: #36413e;
     color: #EDF7B5;
 
 }
+
 nav a {
     text-decoration: none;
     color: #6F9CEB;
@@ -74,8 +77,8 @@ nav ul li a {
     text-decoration: none;
     color: #333;
     padding: 5px;
-    
-    
+
+
 }
 
 nav ul li a:hover {
@@ -155,10 +158,10 @@ nav ul li a:hover {
     color: #EDF7B5;
 }
 
-.contact{
+.contact {
     background-color: chocolate;
     height: 100vh;
-    
+
 }
 
 .scrLink {
@@ -173,4 +176,3 @@ nav ul li a:hover {
     background-color: #EDF7B5;
     height: 100vh;
 }
-
