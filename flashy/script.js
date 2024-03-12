@@ -3,8 +3,8 @@ document.addEventListener('scroll', () => {
     const logo = document.getElementById('logo');
     const navBtn = document.getElementById('navBtn');
     const navbarlink = document.querySelectorAll(".navbar-link");
-
-    if (window.scrollY > 670 && window.scrollY < 2085) {
+    
+    if (window.scrollY > 670 && window.scrollY < 1366) {
         // logo
         logo.classList.add('scrolled');
 
@@ -34,3 +34,7 @@ document.addEventListener('scroll', () => {
 
     console.log(window.scrollY);
 })
+
+function start() {
+    window.location.href = 'login.html';
+}

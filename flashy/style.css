@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Mono&family=Rubik+Doodle+Shadow&display=swap');
 
+:root {
+    --main-white: #F6F2FF;
+    --main-blue: #6F9CEB;
+  }
+  
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -14,7 +20,6 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
 nav {
@@ -25,10 +30,9 @@ nav {
     justify-content: space-around;
     align-items: center;
     padding: 2rem;
-    /* background-color:#EDF7B5; */
     width: 100%;
     height: 100px;
-
+    border: 1px solid red;
 }
 
 nav .btns {
@@ -44,23 +48,24 @@ nav .btns button {
     margin-left: 1rem;
     border: 2px;
     transition: 0.2s ease-in-out;
+    
 }
 
 .navBtn {
-    background-color: #6F9CEB;
-    color: #EDF7B5;
+    background-color: var(--main-blue);
+    color: var(--main-white);
 }
 
 nav .btns .navBtn:hover {
     cursor: pointer;
     background-color: #36413e;
-    color: #EDF7B5;
+    color: var(--main-white);
 
 }
 
 nav a {
     text-decoration: none;
-    color: #6F9CEB;
+    color: var(--main-blue);
     transition: 0.3s ease-in-out;
 }
 
@@ -77,16 +82,14 @@ nav ul li a {
     text-decoration: none;
     color: #333;
     padding: 5px;
-
-
 }
 
 nav ul li a:hover {
-    color: #6F9CEB;
+    color: var(--main-blue);
 }
 
 .hero {
-    background-color: #F6F2FF;
+    background-color: var(--main-white);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -126,11 +129,11 @@ nav ul li a:hover {
     height: 36px;
     margin-top: 40px;
     border-radius: 5px;
-    background-color: #6F9CEB;
+    background-color: var(--main-blue);
     font-weight: bolder;
     cursor: pointer;
     border: none;
-    color: #EDF7B5;
+    color: var(--main-white);
     transition: 0.2s ease-in-out;
 }
 
@@ -139,16 +142,16 @@ nav ul li a:hover {
 }
 
 .about {
-    background-color: #6F9CEB;
+    background-color: var(--main-blue);
     height: 100vh;
 }
 
 .scrolled {
-    color: #EDF7B5;
+    color: var(--main-white);
 }
 
 .scr {
-    background-color: #EDF7B5;
+    background-color: var(--main-white);
     color: #333;
 }
 
@@ -159,13 +162,12 @@ nav ul li a:hover {
 }
 
 .contact {
-    background-color: chocolate;
+    background-color: var(--main-white);
     height: 100vh;
-
 }
 
 .scrLink {
-    color: #EDF7B5;
+    color: var(--main-white);
 }
 
 .scrLink:hover {
@@ -173,6 +175,18 @@ nav ul li a:hover {
 }
 
 .start {
-    background-color: #EDF7B5;
+    background-color: var(--main-white);
     height: 100vh;
+}
+
+.left-login {
+    margin-top: 100px;
+    width: 60%;
+    border: 1px solid red;
+    display: flex;
+}
+
+.left-login img {
+    width: 60%;
+    border: 1px solid red;
 }
